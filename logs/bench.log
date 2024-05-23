@@ -135,3 +135,4 @@
 2024-05-23 14:34:14,551 INFO /home/brilworks/.local/bin/bench worker
 2024-05-23 14:34:14,563 INFO /home/brilworks/.local/bin/bench watch
 2024-05-23 14:34:14,564 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-23 18:00:01,655 INFO /usr/local/bin/bench --verbose --site all backup

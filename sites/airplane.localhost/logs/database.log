@@ -50,3 +50,55 @@ ALTER TABLE `tabAirplane` MODIFY `capacity` int NOT NULL DEFAULT 0
 ALTER TABLE `tabAirplane` MODIFY `capacity` int NOT NULL DEFAULT 0
 2024-05-23 14:27:33,256 WARNING database DDL Query made to DB:
 ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140)
+2024-05-23 17:35:43,038 WARNING database DDL Query made to DB:
+create table `tabAirplane Flight` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`amended_from` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index `amended_from`(`amended_from`),
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-05-23 17:39:35,981 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` ADD COLUMN `airplane` varchar(140), ADD COLUMN `date_of_departure` date, ADD COLUMN `time_of_departure` time(6), ADD COLUMN `duration` decimal(21,9), ADD COLUMN `status` varchar(140) DEFAULT 'Scheduled'
+2024-05-23 17:40:51,081 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-23 17:41:48,677 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-23 17:45:45,991 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-05-23 17:47:35,390 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9)
+2024-05-23 17:48:48,939 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140)
+2024-05-23 17:49:56,888 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-05-23 17:52:39,813 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` ADD COLUMN `seat` varchar(140)
+2024-05-23 17:52:39,825 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9)
+2024-05-23 18:10:39,157 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` ADD COLUMN `source_airport` varchar(140), ADD COLUMN `destination_airport` varchar(140)
+2024-05-23 18:10:39,165 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-23 18:13:03,735 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-05-23 18:18:29,970 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9)
+2024-05-23 18:32:29,926 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9)
+2024-05-23 18:39:09,422 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `passenger` varchar(140)
+2024-05-23 18:51:21,325 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)

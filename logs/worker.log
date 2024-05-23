@@ -9326,3 +9326,21 @@
 2024-05-23 16:49:10,234 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
 2024-05-23 16:49:10,239 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
 2024-05-23 16:49:10,242 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-05-23 17:16:10,393 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-05-23 17:16:10,397 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-05-23 17:16:10,400 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-05-23 17:41:23,572 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Airplane Flight', 'name': 'AirAsia-005-05-2024'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::3bb218b9-2ce2-472b-98ce-99bc9a62509e)
+2024-05-23 17:41:23,734 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::3bb218b9-2ce2-472b-98ce-99bc9a62509e)
+2024-05-23 17:41:23,735 Result is kept for 600 seconds
+2024-05-23 17:41:23,744 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-05-23 17:41:23,748 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-05-23 17:41:23,749 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-05-23 17:42:28,979 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Airplane Flight', 'name': 'AirAsia-005-05-2024-00025'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::4b8a6f31-8575-41ce-ac74-2de6faa53036)
+2024-05-23 17:42:29,126 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::4b8a6f31-8575-41ce-ac74-2de6faa53036)
+2024-05-23 17:42:29,127 Result is kept for 600 seconds
+2024-05-23 18:09:29,406 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-05-23 18:09:29,411 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-05-23 18:09:29,414 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-05-23 18:36:29,678 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-05-23 18:36:29,683 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-05-23 18:36:29,688 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
