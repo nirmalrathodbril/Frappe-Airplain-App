@@ -1,0 +1,52 @@
+2024-05-22 12:31:13,963 WARNING database DDL Query made to DB:
+create table `tabDriver` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-05-22 12:32:09,881 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver` ADD COLUMN `name1` varchar(140), ADD COLUMN `items` varchar(140)
+2024-05-22 12:33:29,698 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver` ADD COLUMN `full_name` varchar(140)
+2024-05-22 14:01:25,234 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver` ADD COLUMN `add_ons` varchar(140)
+2024-05-22 14:02:56,171 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver` ADD COLUMN `amended_from` varchar(140)
+2024-05-22 14:02:56,182 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver` ADD INDEX `amended_from_index`(`amended_from`)
+2024-05-22 14:33:25,225 WARNING database DDL Query made to DB:
+alter table `tabAirplane Ticket Add-on Item` add column if not exists parent varchar(140)
+2024-05-22 14:33:25,226 WARNING database DDL Query made to DB:
+alter table `tabAirplane Ticket Add-on Item` add column if not exists parenttype varchar(140)
+2024-05-22 14:33:25,227 WARNING database DDL Query made to DB:
+alter table `tabAirplane Ticket Add-on Item` add column if not exists parentfield varchar(140)
+2024-05-22 14:33:25,299 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket Add-on Item` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-05-22 14:33:52,757 WARNING database DDL Query made to DB:
+alter table `tabAirplane Ticket Add-on Item` add column if not exists parent varchar(140)
+2024-05-22 14:33:52,758 WARNING database DDL Query made to DB:
+alter table `tabAirplane Ticket Add-on Item` add column if not exists parenttype varchar(140)
+2024-05-22 14:33:52,759 WARNING database DDL Query made to DB:
+alter table `tabAirplane Ticket Add-on Item` add column if not exists parentfield varchar(140)
+2024-05-22 14:33:52,843 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket Add-on Item` MODIFY `amount` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-05-22 14:33:52,855 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket Add-on Item` DROP INDEX `item`
+2024-05-23 12:45:53,910 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane` MODIFY `capacity` int NOT NULL DEFAULT 0
+2024-05-23 12:46:06,588 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane` MODIFY `capacity` int NOT NULL DEFAULT 0
+2024-05-23 14:27:33,256 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140)

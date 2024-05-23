@@ -1,0 +1,137 @@
+2024-05-09 18:27:13,134 DEBUG cd frappe-bench && python3 -m venv env
+2024-05-09 18:27:16,506 DEBUG cd frappe-bench && /home/brilworks/projects/T1/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-05-09 18:27:19,387 DEBUG cd frappe-bench && /home/brilworks/projects/T1/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-05-09 18:27:21,557 LOG Getting frappe
+2024-05-09 18:27:21,557 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-05-09 18:27:26,224 LOG Installing frappe
+2024-05-09 18:27:26,224 DEBUG cd /home/brilworks/projects/T1/frappe-bench && /home/brilworks/projects/T1/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/brilworks/projects/T1/frappe-bench/apps/frappe 
+2024-05-09 18:29:21,788 DEBUG cd /home/brilworks/projects/T1/frappe-bench/apps/frappe && yarn install --check-files
+2024-05-09 18:29:37,455 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-05-09 18:29:37,455 DEBUG cd frappe-bench && bench build
+2024-05-09 18:29:37,553 INFO /usr/local/bin/bench build
+2024-05-09 18:30:08,370 LOG setting up backups
+2024-05-09 18:30:08,381 LOG backups were set up
+2024-05-09 18:30:08,381 INFO Bench frappe-bench initialized
+2024-05-09 18:30:45,158 INFO /usr/local/bin/bench new-site airplane.localhost
+2024-05-09 18:57:45,246 INFO /usr/local/bin/bench new-app airplane_mode
+2024-05-09 18:57:45,250 LOG creating new app airplane_mode
+2024-05-09 18:58:34,620 LOG Installing airplane_mode
+2024-05-09 18:58:34,621 DEBUG cd /home/brilworks/projects/T1/frappe-bench && /home/brilworks/projects/T1/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/brilworks/projects/T1/frappe-bench/apps/airplane_mode 
+2024-05-09 18:58:37,401 DEBUG bench build --app airplane_mode
+2024-05-09 18:58:37,498 INFO /usr/local/bin/bench build --app airplane_mode
+2024-05-09 18:58:38,792 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-05-09 18:59:43,719 INFO /usr/local/bin/bench --site airplanemode.localhost add-to-hosts
+2024-05-09 18:59:56,930 INFO /usr/local/bin/bench start
+2024-05-09 18:59:57,189 INFO /usr/local/bin/bench serve --port 8000
+2024-05-09 18:59:57,190 INFO /usr/local/bin/bench schedule
+2024-05-09 18:59:57,227 INFO /usr/local/bin/bench worker
+2024-05-09 18:59:57,232 INFO /usr/local/bin/bench watch
+2024-05-09 19:00:58,320 INFO /usr/local/bin/bench --site airplane.localhost add-to-hosts
+2024-05-09 19:01:05,166 INFO /usr/local/bin/bench start
+2024-05-09 19:01:05,421 INFO /usr/local/bin/bench watch
+2024-05-09 19:01:05,433 INFO /usr/local/bin/bench schedule
+2024-05-09 19:01:05,466 INFO /usr/local/bin/bench serve --port 8000
+2024-05-09 19:01:05,475 INFO /usr/local/bin/bench worker
+2024-05-10 12:00:01,333 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-10 18:00:01,790 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-10 18:24:18,244 INFO /home/brilworks/.local/bin/bench start
+2024-05-10 18:24:18,776 INFO /home/brilworks/.local/bin/bench watch
+2024-05-10 18:24:18,779 INFO /home/brilworks/.local/bin/bench worker
+2024-05-10 18:24:18,793 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-10 18:24:18,794 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-10 19:16:14,606 INFO /home/brilworks/.local/bin/bench start
+2024-05-10 19:16:14,858 INFO /home/brilworks/.local/bin/bench watch
+2024-05-10 19:16:14,865 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-10 19:16:14,878 INFO /home/brilworks/.local/bin/bench worker
+2024-05-10 19:16:14,903 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-10 19:22:02,481 INFO /home/brilworks/.local/bin/bench start
+2024-05-10 19:22:02,793 INFO /home/brilworks/.local/bin/bench watch
+2024-05-10 19:22:02,796 INFO /home/brilworks/.local/bin/bench worker
+2024-05-10 19:22:02,802 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-10 19:22:02,807 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-10 19:23:37,021 INFO /home/brilworks/.local/bin/bench start
+2024-05-10 19:23:37,292 INFO /home/brilworks/.local/bin/bench watch
+2024-05-10 19:23:37,303 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-10 19:23:37,305 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-10 19:23:37,342 INFO /home/brilworks/.local/bin/bench worker
+2024-05-13 11:13:54,192 INFO /home/brilworks/.local/bin/bench set-config -g developer_mode 1
+2024-05-13 11:14:48,884 INFO /home/brilworks/.local/bin/bench --site airplane.localhost clear-cache
+2024-05-13 11:24:31,438 INFO /home/brilworks/.local/bin/bench --site airplane.localhost set-config developer_mode 1
+2024-05-13 11:26:06,817 INFO /home/brilworks/.local/bin/bench start
+2024-05-13 11:26:07,069 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-13 11:26:07,069 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-13 11:26:07,088 INFO /home/brilworks/.local/bin/bench watch
+2024-05-13 11:26:07,113 INFO /home/brilworks/.local/bin/bench worker
+2024-05-13 12:00:02,112 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-13 12:16:23,362 INFO /home/brilworks/.local/bin/bench --site airplane.localhost install-app airplane_mode
+2024-05-13 13:48:53,127 INFO /home/brilworks/.local/bin/bench start
+2024-05-13 13:48:53,385 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-13 13:48:53,387 INFO /home/brilworks/.local/bin/bench worker
+2024-05-13 13:48:53,404 INFO /home/brilworks/.local/bin/bench watch
+2024-05-13 13:48:53,422 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-13 18:00:01,890 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-14 12:00:01,691 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-14 18:00:01,186 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-15 12:00:01,545 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-15 18:00:01,741 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-16 12:00:01,439 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-16 18:00:02,423 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-17 12:00:02,031 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-17 18:00:02,002 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-20 12:00:02,118 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-20 14:33:20,848 INFO /home/brilworks/.local/bin/bench start
+2024-05-20 14:33:21,309 INFO /home/brilworks/.local/bin/bench watch
+2024-05-20 14:33:21,310 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-20 14:33:21,315 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-20 14:33:21,316 INFO /home/brilworks/.local/bin/bench worker
+2024-05-20 15:51:40,276 INFO /home/brilworks/.local/bin/bench start
+2024-05-20 15:51:40,539 INFO /home/brilworks/.local/bin/bench watch
+2024-05-20 15:51:40,543 INFO /home/brilworks/.local/bin/bench worker
+2024-05-20 15:51:40,553 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-20 15:51:40,572 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-20 18:00:02,109 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-21 12:00:01,937 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-21 14:08:57,114 INFO /home/brilworks/.local/bin/bench start
+2024-05-21 14:08:57,652 INFO /home/brilworks/.local/bin/bench worker
+2024-05-21 14:08:57,652 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-21 14:08:57,653 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-21 14:08:57,656 INFO /home/brilworks/.local/bin/bench watch
+2024-05-21 17:54:08,229 INFO /home/brilworks/.local/bin/bench start
+2024-05-21 17:54:08,661 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-21 17:54:08,662 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-21 17:54:08,663 INFO /home/brilworks/.local/bin/bench worker
+2024-05-21 17:54:08,664 INFO /home/brilworks/.local/bin/bench watch
+2024-05-21 18:00:02,095 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-22 11:53:40,026 INFO /home/brilworks/.local/bin/bench start
+2024-05-22 11:53:40,294 INFO /home/brilworks/.local/bin/bench worker
+2024-05-22 11:53:40,303 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-22 11:53:40,355 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-22 11:53:40,364 INFO /home/brilworks/.local/bin/bench watch
+2024-05-22 12:00:02,114 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-22 12:08:53,126 INFO /home/brilworks/.local/bin/bench start
+2024-05-22 12:08:53,384 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-22 12:08:53,426 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-22 12:08:53,427 INFO /home/brilworks/.local/bin/bench worker
+2024-05-22 12:08:53,431 INFO /home/brilworks/.local/bin/bench watch
+2024-05-22 12:14:11,742 INFO /home/brilworks/.local/bin/bench start
+2024-05-22 12:14:12,002 INFO /home/brilworks/.local/bin/bench watch
+2024-05-22 12:14:12,005 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-22 12:14:12,011 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-22 12:14:12,038 INFO /home/brilworks/.local/bin/bench worker
+2024-05-22 14:42:22,491 INFO /home/brilworks/.local/bin/bench start
+2024-05-22 14:42:22,745 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-22 14:42:22,750 INFO /home/brilworks/.local/bin/bench worker
+2024-05-22 14:42:22,798 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-22 14:42:22,799 INFO /home/brilworks/.local/bin/bench watch
+2024-05-22 14:50:04,776 INFO /home/brilworks/.local/bin/bench start
+2024-05-22 14:50:05,057 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-22 14:50:05,090 INFO /home/brilworks/.local/bin/bench worker
+2024-05-22 14:50:05,095 INFO /home/brilworks/.local/bin/bench schedule
+2024-05-22 14:50:05,099 INFO /home/brilworks/.local/bin/bench watch
+2024-05-22 18:00:01,737 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-23 12:00:01,622 INFO /usr/local/bin/bench --verbose --site all backup
+2024-05-23 14:34:14,267 INFO /home/brilworks/.local/bin/bench start
+2024-05-23 14:34:14,516 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-05-23 14:34:14,551 INFO /home/brilworks/.local/bin/bench worker
+2024-05-23 14:34:14,563 INFO /home/brilworks/.local/bin/bench watch
+2024-05-23 14:34:14,564 INFO /home/brilworks/.local/bin/bench schedule
