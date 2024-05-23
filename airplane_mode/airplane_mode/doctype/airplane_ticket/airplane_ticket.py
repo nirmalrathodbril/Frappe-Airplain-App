@@ -1,6 +1,7 @@
 # Copyright (c) 2024, Nirmal Rathod and contributors
 # For license information, please see license.txt
-
+import random
+import string
 import frappe
 from frappe.model.document import Document
 
@@ -45,3 +46,9 @@ class AirplaneTicket(Document):
 
 		self.total_amount = sum_amount + self.flight_price
 
+	def on_submit(self):
+		number = random.randint(1, 99)
+		# Generate a random uppercase letter
+		letter = random.choice(string.ascii_uppercase)
+		# Combine number and letter to form seat assignment
+		self.seat = f"{number}{letter}"

@@ -14,8 +14,9 @@
   "source_airport",
   "destination_airport",
   "passenger",
-  "airplane",
+  "flight",
   "status",
+  "seat",
   "column_break_uofh",
   "source_airport_code",
   "destination_airport_code",
@@ -52,13 +53,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "airplane",
-   "fieldtype": "Link",
-   "label": "airplane",
-   "options": "Airplane",
-   "reqd": 1
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
@@ -85,6 +79,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "flight.date_of_departure",
    "fieldname": "departure_date",
    "fieldtype": "Date",
    "in_filter": 1,
@@ -92,12 +87,14 @@
    "reqd": 1
   },
   {
+   "fetch_from": "flight.time_of_departure",
    "fieldname": "departure_time",
    "fieldtype": "Time",
    "label": "Departure Time",
    "reqd": 1
   },
   {
+   "fetch_from": "flight.duration",
    "fieldname": "duration_of_flight",
    "fieldtype": "Duration",
    "label": "Duration of Flight"
@@ -147,12 +144,25 @@
    "label": "Add Ons",
    "options": "Airplane Ticket Add-on Item",
    "search_index": 1
+  },
+  {
+   "fieldname": "flight",
+   "fieldtype": "Link",
+   "label": "flight",
+   "options": "Airplane Flight",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seat",
+   "fieldtype": "Data",
+   "label": "Seat",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-23 14:27:33.120581",
+ "modified": "2024-05-23 18:39:09.269584",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",
