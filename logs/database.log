@@ -102,3 +102,23 @@ ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `flight
 ALTER TABLE `tabAirplane Ticket` MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `passenger` varchar(140)
 2024-05-23 18:51:21,325 WARNING database DDL Query made to DB:
 ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-27 18:09:58,384 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` ADD COLUMN `source_airport_code` varchar(140), ADD COLUMN `destination_airport_code` varchar(140)
+2024-05-27 18:09:58,392 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-27 18:10:18,953 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-27 18:10:39,046 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-27 18:11:13,073 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-27 18:12:06,302 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-05-27 18:14:14,252 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `passenger` varchar(140)
+2024-05-27 18:16:58,150 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9)
+2024-05-27 18:18:43,574 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9)
+2024-05-27 18:47:25,044 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0
