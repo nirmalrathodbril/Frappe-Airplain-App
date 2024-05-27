@@ -29,20 +29,20 @@
  ],
  "fields": [
   {
+   "fetch_from": "flight.source_airport",
    "fieldname": "source_airport",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Source Airport",
-   "options": "Airport",
-   "reqd": 1
+   "options": "Airport"
   },
   {
+   "fetch_from": "flight.destination_airport",
    "fieldname": "destination_airport",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Destination Airport",
-   "options": "Airport",
-   "reqd": 1
+   "options": "Airport"
   },
   {
    "fieldname": "passenger",
@@ -63,20 +63,18 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "source_airport.code",
+   "fetch_from": "flight.source_airport_code",
    "fieldname": "source_airport_code",
    "fieldtype": "Read Only",
    "in_list_view": 1,
-   "label": "Source Airport Code",
-   "reqd": 1
+   "label": "Source Airport Code"
   },
   {
-   "fetch_from": "destination_airport.code",
+   "fetch_from": "flight.destination_airport_code",
    "fieldname": "destination_airport_code",
    "fieldtype": "Read Only",
    "in_list_view": 1,
-   "label": "Destination Airport Code",
-   "reqd": 1
+   "label": "Destination Airport Code"
   },
   {
    "fetch_from": "flight.date_of_departure",
@@ -162,7 +160,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-23 18:39:09.269584",
+ "modified": "2024-05-27 18:47:24.910245",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",
