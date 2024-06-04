@@ -142,3 +142,81 @@ Backup Summary for airplane.localhost at 2024-05-27 18:00:02.170016
 Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240527_180001-airplane_localhost-site_config_backup.json 149.0B
 Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240527_180001-airplane_localhost-database.sql.gz 296.0KiB
 Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240528_120001-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-28 12:00:02.375168
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240528_120001-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240528_120001-airplane_localhost-database.sql.gz 305.6KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240528_180001-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-28 18:00:02.044372
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240528_180001-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240528_180001-airplane_localhost-database.sql.gz 315.8KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240529_120002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-29 12:00:02.496827
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240529_120002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240529_120002-airplane_localhost-database.sql.gz 316.4KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240529_180002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-29 18:00:02.530590
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240529_180002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240529_180002-airplane_localhost-database.sql.gz 317.3KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240530_120001-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-30 12:00:02.052977
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240530_120001-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240530_120001-airplane_localhost-database.sql.gz 317.3KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240530_180002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-30 18:00:02.486266
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240530_180002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240530_180002-airplane_localhost-database.sql.gz 317.3KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240531_000002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-31 00:00:02.455149
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240531_000002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240531_000002-airplane_localhost-database.sql.gz 317.3KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240531_120001-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-31 12:00:02.067563
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240531_120001-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240531_120001-airplane_localhost-database.sql.gz 316.7KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240531_180002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-05-31 18:00:02.521364
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240531_180002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240531_180002-airplane_localhost-database.sql.gz 316.7KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240603_120002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-06-03 12:00:02.753072
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240603_120002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240603_120002-airplane_localhost-database.sql.gz 317.1KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240603_180002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-06-03 18:00:02.749580
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240603_180002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240603_180002-airplane_localhost-database.sql.gz 317.1KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240604_120002-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-06-04 12:00:02.624912
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240604_120002-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240604_120002-airplane_localhost-database.sql.gz 317.3KiB
+Backup for Site airplane.localhost has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_8c8abf3097c1fa40 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8c8abf3097c1fa40 | /usr/bin/gzip >> ./airplane.localhost/private/backups/20240604_180001-airplane_localhost-database.sql.gz
+
+Backup Summary for airplane.localhost at 2024-06-04 18:00:02.280112
+Config  : /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240604_180001-airplane_localhost-site_config_backup.json 149.0B
+Database: /home/brilworks/projects/T1/frappe-bench/sites/airplane.localhost/private/backups/20240604_180001-airplane_localhost-database.sql.gz 318.2KiB
+Backup for Site airplane.localhost has been successfully completed
