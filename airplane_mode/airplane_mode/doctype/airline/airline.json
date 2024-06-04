@@ -8,6 +8,7 @@
  "field_order": [
   "founding_year",
   "customer_care_number",
+  "column_break_strf",
   "headquarters"
  ],
  "fields": [
@@ -30,6 +31,10 @@
    "in_list_view": 1,
    "label": "Headquarters",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_strf",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -39,7 +44,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2024-05-13 12:19:10.284114",
+ "modified": "2024-06-04 19:46:58.145631",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airline",

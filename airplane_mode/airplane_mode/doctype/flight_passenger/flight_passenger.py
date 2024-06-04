@@ -7,5 +7,16 @@ from frappe.model.document import Document
 
 class FlightPassenger(Document):
 	def before_save(self):
-		self.full_name = f"{self.first_name} {self.last_name}"
+		fn = self.first_name if self.first_name is not None else ""
+		ln = self.last_name if self.last_name is not None else ""
+		print("=======================11111111111111111")
+		print(fn)
+		print(ln)
+
+		if ln != "":
+			self.full_name = f"{fn} {ln}"
+		else: self.full_name = f"{fn}"
+
+
+
 

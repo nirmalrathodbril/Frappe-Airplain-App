@@ -24,12 +24,13 @@ class AirplaneTicket(Document):
 
 		print("====== Result ==============")
 		print(self.add_ons)
+		self.validation_to_check()
 
 
 	def validation_to_check(self):
 		print("before submit from Airplate ticket")
 		if (self.status != 'Boarded'):
-			frappe.throw("Ticket can not be submit as Flight has not been boarded yet.")
+			frappe.throw("Ticket can not be submit as Plain has not been boarded yet.")
 
 
 	def before_save(self):

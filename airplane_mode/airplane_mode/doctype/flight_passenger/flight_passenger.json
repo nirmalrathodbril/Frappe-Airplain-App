@@ -9,7 +9,8 @@
   "last_name",
   "date_of_birth",
   "column_break_yvlp",
-  "full_name"
+  "full_name",
+  "image_ljcc"
  ],
  "fields": [
   {
@@ -23,8 +24,7 @@
    "fieldname": "last_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Last Name",
-   "reqd": 1
+   "label": "Last Name"
   },
   {
    "fieldname": "date_of_birth",
@@ -43,6 +43,11 @@
    "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Full Name"
+  },
+  {
+   "fieldname": "image_ljcc",
+   "fieldtype": "Image",
+   "label": "Image"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -52,7 +57,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2024-05-22 12:18:45.137285",
+ "modified": "2024-06-04 16:19:36.753781",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Passenger",
