@@ -152,3 +152,25 @@ ALTER TABLE `tabAirline` ADD COLUMN `a` text
 ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
 2024-06-04 19:46:58,240 WARNING database DDL Query made to DB:
 ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 08:53:25,291 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` ADD COLUMN `website` varchar(140)
+2024-06-05 08:53:25,300 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 08:56:18,468 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 09:27:48,678 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 09:37:51,041 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 09:38:31,921 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 09:53:43,676 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 09:53:51,956 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 09:54:27,479 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 13:52:00,208 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirline` MODIFY `founding_year` int NOT NULL DEFAULT 0
+2024-06-05 16:23:59,143 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `status` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9)
