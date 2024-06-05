@@ -7,7 +7,7 @@
         .rectangle-box {
             width: 1000px;
             height: 500px;
-            background-color: {{ color }};
+            background-color: {% if frappe.form_dict.color %}{{ frappe.form_dict.color }}{% else %}black{% endif %};
         }
     </style>
 </head>

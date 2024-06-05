@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2024-05-10 12:02:00.907767",
@@ -9,7 +10,8 @@
   "founding_year",
   "customer_care_number",
   "column_break_strf",
-  "headquarters"
+  "headquarters",
+  "website"
  ],
  "fields": [
   {
@@ -35,6 +37,12 @@
   {
    "fieldname": "column_break_strf",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -44,7 +52,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2024-06-04 19:46:58.145631",
+ "modified": "2024-06-05 13:52:00.109062",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airline",
