@@ -172,3 +172,8 @@
 2024-06-06 12:00:02,051 INFO /usr/local/bin/bench --verbose --site all backup
 2024-06-06 18:00:01,368 INFO /usr/local/bin/bench --verbose --site all backup
 2024-06-07 12:00:01,911 INFO /usr/local/bin/bench --verbose --site all backup
+2024-06-07 14:50:24,138 INFO /home/brilworks/.local/bin/bench start
+2024-06-07 14:50:24,647 INFO /home/brilworks/.local/bin/bench watch
+2024-06-07 14:50:24,648 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-06-07 14:50:24,694 INFO /home/brilworks/.local/bin/bench schedule
+2024-06-07 14:50:24,696 INFO /home/brilworks/.local/bin/bench worker
