@@ -103,6 +103,12 @@ auto_assign_seat:  function(frm) {
 
 assign_seat: function(frm) {
 
+	 function validation(seat_assignment) {
+        // Regular expression to check if the string contains at least one letter and one number
+        var regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$/;
+        return regex.test(seat_assignment);
+    }
+
 
     // Create a new instance of the frappe.ui.Dialog class
     var d = new frappe.ui.Dialog({
@@ -119,20 +125,17 @@ assign_seat: function(frm) {
         primary_action_label: 'Submit',  // Label for the submit button
         primary_action: function() {     // Action to take when the submit button is clicked
             let data = d.get_values();     // Retrieve the values entered in the dialog
-            if (data) {
-                frappe.msgprint(`Seat Assignment: ${data.seat_assignment}`); // Display a message with the entered value
-                frm.set_value("seat", data.seat_assignment); // Set the 'seat' field in the form with the entered value
-                d.hide(); // Hide the dialog after submission
-            }
+            if (validation(data.seat_assignment)) {
+                    frm.set_value("seat", data.seat_assignment); // Set the 'seat' field in the form with the entered value
+                    d.hide(); // Hide the dialog after submission
+                    frm.save();
+                } else {
+                   frappe.throw('Seat is not valid.'); // Display an error message if validation fails
+                }
         }
 
     });
 
-    // Add a Cancel button
-    d.set_secondary_action(function() {
-        d.hide(); // Hide the dialog when Cancel is clicked
-    });
-    d.set_secondary_action_label('Cancel');
     d.show(); // Show the dialog to the user
 
    }
