@@ -52,4 +52,4 @@ class AirplaneTicket(Document):
 		# Generate a random uppercase letter
 		letter = random.choice(string.ascii_uppercase)
 		# Combine number and letter to form seat assignment
-		self.seat = f"{number}{letter}"
+		# self.seat = f"{number}{letter}"

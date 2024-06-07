@@ -9,6 +9,7 @@
  "field_order": [
   "founding_year",
   "customer_care_number",
+  "support_email",
   "column_break_strf",
   "headquarters",
   "website"
@@ -43,6 +44,12 @@
    "fieldtype": "Data",
    "label": "Website",
    "options": "URL"
+  },
+  {
+   "fieldname": "support_email",
+   "fieldtype": "Data",
+   "label": "Support Email",
+   "options": "Email"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -52,7 +59,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2024-06-05 13:52:00.109062",
+ "modified": "2024-06-06 19:03:52.197668",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airline",
