@@ -4,13 +4,13 @@
   {
    "fieldname": "name",
    "fieldtype": "Data",
-   "label": "Item Name",
+   "label": "Add-On Type",
    "width": 0
   },
   {
    "fieldname": "count_of_usage",
    "fieldtype": "Int",
-   "label": "Usage",
+   "label": "Sold Count",
    "width": 0
   }
  ],
@@ -20,24 +20,25 @@
  "doctype": "Report",
  "filters": [
   {
-   "fieldname": "name",
+   "default": "dinner",
+   "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "Name",
+   "label": "Name Label",
    "mandatory": 1,
-   "options": "Dinner\n",
+   "options": "",
    "wildcard_filter": 1
   }
  ],
  "idx": 0,
  "is_standard": "Yes",
  "letterhead": null,
- "modified": "2024-06-10 17:17:42.519344",
+ "modified": "2024-06-10 18:09:18.323521",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Add-on Popularity",
  "owner": "Administrator",
  "prepared_report": 0,
- "query": "Select \n    type.name, count(1) as count_of_usage\n    from `tabAirplane Ticket Add-on Item` as item \n        RIGHT JOIN `tabAirplane Ticket Add-on Type` as type ON type.name = item.item \n    group by type.name;",
+ "query": "SELECT \n    type.name, COUNT(1) AS count_of_usage \n    FROM `tabAirplane Ticket Add-on Item` AS item \n        RIGHT JOIN `tabAirplane Ticket Add-on Type` AS type ON type.name = item.item \n    GROUP BY name\n    HAVING type.name LIKE %(name1)s;\n",
  "ref_doctype": "Airplane Ticket Add-on Type",
  "report_name": "Add-on Popularity",
  "report_type": "Query Report",
