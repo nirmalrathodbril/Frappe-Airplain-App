@@ -217,3 +217,21 @@ Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepar
 2024-06-11 16:38:13,184 ERROR frappe New Exception collected in error log
 Site: airplane.localhost
 Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2024-06-11 17:19:36,011 ERROR frappe New Exception collected in error log
+Site: airplane.localhost
+Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2024-06-11 17:20:11,026 ERROR frappe New Exception collected in error log
+Site: airplane.localhost
+Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2024-06-11 17:22:23,187 ERROR frappe New Exception collected in error log
+Site: airplane.localhost
+Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2024-06-11 17:46:21,401 ERROR frappe New Exception collected in error log
+Site: airplane.localhost
+Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2024-06-11 17:49:27,374 ERROR frappe New Exception collected in error log
+Site: airplane.localhost
+Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2024-06-11 17:49:34,816 ERROR frappe New Exception collected in error log
+Site: airplane.localhost
+Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
