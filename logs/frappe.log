@@ -235,3 +235,9 @@ Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepar
 2024-06-11 17:49:34,816 ERROR frappe New Exception collected in error log
 Site: airplane.localhost
 Form Dict: {'report_name': 'Revenue By Airline', 'filters': '{}', 'ignore_prepared_report': 'false', 'are_default_filters': 'true', 'cmd': 'frappe.desk.query_report.run'}
+2024-06-12 09:38:12,279 ERROR frappe Error while inserting deferred Error Log record: Error Log mdtqqflmo1: 'Title' ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '='2'' at line 5")) will get truncated, as max characters allowed is 140
+Site: airplane.localhost
+Form Dict: {}
+2024-06-12 09:38:12,282 ERROR frappe Error while inserting deferred Error Log record: Error Log mdtqqv0l7g: 'Title' ((1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '=2' at line 5")) will get truncated, as max characters allowed is 140
+Site: airplane.localhost
+Form Dict: {}
