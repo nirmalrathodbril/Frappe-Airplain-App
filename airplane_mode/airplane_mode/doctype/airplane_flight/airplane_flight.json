@@ -21,7 +21,10 @@
   "destination_airport_code",
   "is_published",
   "route",
-  "image"
+  "image",
+  "gate_no",
+  "section_break_twks",
+  "crew_members"
  ],
  "fields": [
   {
@@ -120,6 +123,23 @@
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "label": "Image"
+  },
+  {
+   "fieldname": "section_break_twks",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crew_members",
+   "fieldtype": "Table MultiSelect",
+   "label": "Crew members",
+   "options": "Flight Crew Member"
+  },
+  {
+   "fieldname": "gate_no",
+   "fieldtype": "Int",
+   "label": "Gate No.",
+   "non_negative": 1,
+   "reqd": 1
   }
  ],
  "has_web_view": 1,
@@ -132,7 +152,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2024-06-12 17:39:12.725167",
+ "modified": "2024-06-13 18:10:07.505938",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",

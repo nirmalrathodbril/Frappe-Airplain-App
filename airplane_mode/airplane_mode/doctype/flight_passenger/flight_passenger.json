@@ -8,6 +8,7 @@
   "first_name",
   "last_name",
   "date_of_birth",
+  "email",
   "column_break_yvlp",
   "full_name",
   "image_ljcc"
@@ -48,6 +49,12 @@
    "fieldname": "image_ljcc",
    "fieldtype": "Image",
    "label": "Image"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -57,7 +64,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2024-06-12 17:44:16.909160",
+ "modified": "2024-06-13 19:41:35.506849",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Passenger",

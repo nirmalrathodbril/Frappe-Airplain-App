@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status==\"Submitted\"",
+ "creation": "2024-06-13 19:17:16.739105",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Airplane Flight",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hello \n    Your gate No has been changed for your flight \n    sorry for inconvenience.\nThank you!",
+ "message_type": "HTML",
+ "modified": "2024-06-13 19:17:16.739105",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Airplane flight gate No. has been changed",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Flight Crew Member"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "",
+ "subject": "Gate No Changed to"
+}
