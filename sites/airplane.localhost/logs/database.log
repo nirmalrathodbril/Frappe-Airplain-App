@@ -208,3 +208,146 @@ ALTER TABLE `tabAirplane` MODIFY `capacity` int NOT NULL DEFAULT 0
 ALTER TABLE `tabAirplane` MODIFY `initial_audit_completed` tinyint NOT NULL DEFAULT 0, MODIFY `capacity` int NOT NULL DEFAULT 0
 2024-06-12 19:10:34,906 WARNING database DDL Query made to DB:
 ALTER TABLE `tabAirplane` MODIFY `capacity` int NOT NULL DEFAULT 0, MODIFY `initial_audit_completed` tinyint NOT NULL DEFAULT 0
+2024-06-12 19:23:18,602 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9), MODIFY `status` varchar(140)
+2024-06-12 19:23:51,658 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `status` varchar(140), MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-06-13 11:16:44,801 WARNING database DDL Query made to DB:
+create table `tabCrew Member` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-06-13 11:19:51,903 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCrew Member` ADD COLUMN `first_name` varchar(140), ADD COLUMN `last_name` varchar(140), ADD COLUMN `cell_phone` varchar(140), ADD COLUMN `root_city` varchar(140)
+2024-06-13 11:24:21,874 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCrew Member` ADD COLUMN `position` varchar(140)
+2024-06-13 11:34:00,934 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCrew Member` ADD COLUMN `status` varchar(140)
+2024-06-13 11:35:15,230 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCrew Member` MODIFY `status` varchar(140) DEFAULT 'Available'
+2024-06-13 12:19:26,050 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCrew Member` ADD COLUMN `full_name` varchar(140) DEFAULT 'f\"{selft.first_name} {self.last_name}\"'
+2024-06-13 12:37:10,916 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCrew Member` MODIFY `full_name` varchar(140)
+2024-06-13 13:50:00,906 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` ADD COLUMN `gate_number` int NOT NULL DEFAULT 0
+2024-06-13 13:50:00,914 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `status` varchar(140), MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0
+2024-06-13 13:51:26,093 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `gate_number` int NOT NULL DEFAULT 0, MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140), MODIFY `status` varchar(140)
+2024-06-13 14:03:03,489 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parent varchar(140)
+2024-06-13 14:03:03,499 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parenttype varchar(140)
+2024-06-13 14:03:03,507 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parentfield varchar(140)
+2024-06-13 14:04:06,384 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parent varchar(140)
+2024-06-13 14:04:06,384 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parenttype varchar(140)
+2024-06-13 14:04:06,385 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parentfield varchar(140)
+2024-06-13 14:06:00,436 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parent varchar(140)
+2024-06-13 14:06:00,437 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parenttype varchar(140)
+2024-06-13 14:06:00,438 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parentfield varchar(140)
+2024-06-13 14:10:30,883 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parent varchar(140)
+2024-06-13 14:10:30,884 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parenttype varchar(140)
+2024-06-13 14:10:30,884 WARNING database DDL Query made to DB:
+alter table `tabCrew Member` add column if not exists parentfield varchar(140)
+2024-06-13 14:21:01,087 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 14:21:26,333 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `is_published` tinyint NOT NULL DEFAULT 0, MODIFY `duration` decimal(21,9)
+2024-06-13 16:02:36,922 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `is_published` tinyint NOT NULL DEFAULT 0, MODIFY `duration` decimal(21,9)
+2024-06-13 16:08:59,969 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCrew Member` ADD COLUMN `_seen` text
+2024-06-13 16:10:02,827 WARNING database DDL Query made to DB:
+create table `tabFlight Crew Member` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-06-13 16:11:44,121 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parent varchar(140)
+2024-06-13 16:11:44,122 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parenttype varchar(140)
+2024-06-13 16:11:44,123 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parentfield varchar(140)
+2024-06-13 16:11:44,185 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFlight Crew Member` ADD COLUMN `crew_member` varchar(140)
+2024-06-13 16:14:39,885 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 17:07:41,402 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parent varchar(140)
+2024-06-13 17:07:41,403 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parenttype varchar(140)
+2024-06-13 17:07:41,404 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parentfield varchar(140)
+2024-06-13 17:07:41,509 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFlight Crew Member` ADD COLUMN `position` varchar(140)
+2024-06-13 17:09:47,659 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parent varchar(140)
+2024-06-13 17:09:47,659 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parenttype varchar(140)
+2024-06-13 17:09:47,660 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parentfield varchar(140)
+2024-06-13 17:10:54,470 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `is_published` tinyint NOT NULL DEFAULT 0, MODIFY `duration` decimal(21,9)
+2024-06-13 17:11:29,806 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` ADD COLUMN `crew_members` varchar(140)
+2024-06-13 17:11:29,820 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `is_published` tinyint NOT NULL DEFAULT 0, MODIFY `duration` decimal(21,9)
+2024-06-13 17:11:42,164 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 17:12:26,361 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 17:15:12,763 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parent varchar(140)
+2024-06-13 17:15:12,764 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parenttype varchar(140)
+2024-06-13 17:15:12,764 WARNING database DDL Query made to DB:
+alter table `tabFlight Crew Member` add column if not exists parentfield varchar(140)
+2024-06-13 17:16:05,445 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 17:17:33,157 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 17:41:29,390 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 18:10:07,674 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` ADD COLUMN `gate_no` int NOT NULL DEFAULT 0
+2024-06-13 18:10:07,682 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-13 18:10:48,118 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `status` varchar(140), MODIFY `duration_of_flight` decimal(21,9), MODIFY `gate_number` int NOT NULL DEFAULT 0
+2024-06-13 19:41:23,913 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFlight Passenger` ADD COLUMN `email` varchar(140)

@@ -12174,3 +12174,198 @@
 2024-06-12 19:02:37,926 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
 2024-06-12 19:02:37,930 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
 2024-06-12 19:02:37,934 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-12 19:29:38,218 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-12 19:29:38,222 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-12 19:29:38,225 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 10:33:41,059 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 10:33:41,060 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 10:33:41,062 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 10:34:31,085 home-brilworks-projects-T1-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_drive.google_drive.daily_b..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.integrations.doctype.google_drive.google_drive.daily_backup)
+2024-06-13 10:34:31,697 home-brilworks-projects-T1-frappe-bench:long: Job OK (airplane.localhost::scheduled_job::frappe.integrations.doctype.google_drive.google_drive.daily_backup)
+2024-06-13 10:34:31,697 Result is kept for 600 seconds
+2024-06-13 10:34:31,703 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_re..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed)
+2024-06-13 10:34:32,087 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.set_auto_repeat_as_completed)
+2024-06-13 10:34:32,087 Result is kept for 600 seconds
+2024-06-13 10:34:32,093 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_r..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry)
+2024-06-13 10:34:32,459 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry)
+2024-06-13 10:34:32,459 Result is kept for 600 seconds
+2024-06-13 10:34:32,469 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_contacts.google_contacts.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.integrations.doctype.google_contacts.google_contacts.sync)
+2024-06-13 10:34:32,926 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.integrations.doctype.google_contacts.google_contacts.sync)
+2024-06-13 10:34:32,926 Result is kept for 600 seconds
+2024-06-13 10:34:32,931 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.social.doctype.energy_point_settings.energy_point_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points)
+2024-06-13 10:34:33,222 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.social.doctype.energy_point_settings.energy_point_settings.allocate_review_points)
+2024-06-13 10:34:33,222 Result is kept for 600 seconds
+2024-06-13 10:34:33,226 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_daily_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.desk.form.document_follow.send_daily_updates)
+2024-06-13 10:34:33,497 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.desk.form.document_follow.send_daily_updates)
+2024-06-13 10:34:33,497 Result is kept for 600 seconds
+2024-06-13 10:34:33,502 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.personal_data_deletion_request.persona..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record)
+2024-06-13 10:34:33,782 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.remove_unverified_record)
+2024-06-13 10:34:33,782 Result is kept for 600 seconds
+2024-06-13 10:34:33,787 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.notification.notification.trigger_daily_..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.email.doctype.notification.notification.trigger_daily_alerts)
+2024-06-13 10:34:34,087 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.email.doctype.notification.notification.trigger_daily_alerts)
+2024-06-13 10:34:34,087 Result is kept for 600 seconds
+2024-06-13 10:34:34,092 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.sessions.clear_expired_sessions'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.sessions.clear_expired_sessions)
+2024-06-13 10:34:34,356 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.sessions.clear_expired_sessions)
+2024-06-13 10:34:34,356 Result is kept for 600 seconds
+2024-06-13 10:34:34,360 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.doctype.event.event.send_event_digest'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.desk.doctype.event.event.send_event_digest)
+2024-06-13 10:34:34,632 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.desk.doctype.event.event.send_event_digest)
+2024-06-13 10:34:34,632 Result is kept for 600 seconds
+2024-06-13 10:34:34,637 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.notifications.clear_notifications'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.desk.notifications.clear_notifications)
+2024-06-13 10:34:34,911 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.desk.notifications.clear_notifications)
+2024-06-13 10:34:34,912 Result is kept for 600 seconds
+2024-06-13 10:34:34,919 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.personal_data_deletion_request.persona..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2024-06-13 10:34:35,211 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request)
+2024-06-13 10:34:35,211 Result is kept for 600 seconds
+2024-06-13 10:34:35,216 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.newsletter.newsletter.send_scheduled_ema..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2024-06-13 10:34:35,544 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.email.doctype.newsletter.newsletter.send_scheduled_email)
+2024-06-13 10:34:35,544 Result is kept for 600 seconds
+2024-06-13 10:34:35,549 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.google_calendar.google_calendar.s..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2024-06-13 10:34:36,036 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.integrations.doctype.google_calendar.google_calendar.sync)
+2024-06-13 10:34:36,036 Result is kept for 600 seconds
+2024-06-13 10:34:36,043 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.form.document_follow.send_hourly_updates'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2024-06-13 10:34:36,315 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.desk.form.document_follow.send_hourly_updates)
+2024-06-13 10:34:36,315 Result is kept for 600 seconds
+2024-06-13 10:34:36,319 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.deferred_insert.save_to_db'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.deferred_insert.save_to_db)
+2024-06-13 10:34:36,850 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.deferred_insert.save_to_db)
+2024-06-13 10:34:36,850 Result is kept for 600 seconds
+2024-06-13 10:34:36,855 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.desk.page.backups.backups.delete_downloadable_backups'..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2024-06-13 10:34:37,167 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.desk.page.backups.backups.delete_downloadable_backups)
+2024-06-13 10:34:37,168 Result is kept for 600 seconds
+2024-06-13 10:34:37,177 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.user_settings.sync_user_settings'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2024-06-13 10:34:37,458 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.model.utils.user_settings.sync_user_settings)
+2024-06-13 10:34:37,458 Result is kept for 600 seconds
+2024-06-13 10:34:37,463 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.model.utils.link_count.update_link_count'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2024-06-13 10:34:37,735 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.model.utils.link_count.update_link_count)
+2024-06-13 10:34:37,735 Result is kept for 600 seconds
+2024-06-13 10:34:37,739 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.automation.doctype.reminder.reminder.send_reminders'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.automation.doctype.reminder.reminder.send_reminders)
+2024-06-13 10:34:38,029 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.automation.doctype.reminder.reminder.send_reminders)
+2024-06-13 10:34:38,029 Result is kept for 600 seconds
+2024-06-13 10:34:38,034 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.monitor.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.monitor.flush)
+2024-06-13 10:34:38,281 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.monitor.flush)
+2024-06-13 10:34:38,281 Result is kept for 600 seconds
+2024-06-13 10:34:38,286 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.utils.global_search.sync_global_search'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.utils.global_search.sync_global_search)
+2024-06-13 10:34:38,537 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.utils.global_search.sync_global_search)
+2024-06-13 10:34:38,538 Result is kept for 600 seconds
+2024-06-13 10:34:38,542 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.notify_unrep..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2024-06-13 10:34:38,827 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.email.doctype.email_account.email_account.notify_unreplied)
+2024-06-13 10:34:38,827 Result is kept for 600 seconds
+2024-06-13 10:34:38,832 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.queue.flush'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.email.queue.flush)
+2024-06-13 10:34:39,149 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.email.queue.flush)
+2024-06-13 10:34:39,150 Result is kept for 600 seconds
+2024-06-13 10:34:39,155 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.core.doctype.log_settings.log_settings.run_log_clean_u..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.core.doctype.log_settings.log_settings.run_log_clean_up)
+2024-06-13 10:34:39,642 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.core.doctype.log_settings.log_settings.run_log_clean_up)
+2024-06-13 10:34:39,642 Result is kept for 600 seconds
+2024-06-13 10:34:39,647 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.core.doctype.prepared_report.prepared_report.expire_st..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report)
+2024-06-13 10:34:39,905 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report)
+2024-06-13 10:34:39,905 Result is kept for 600 seconds
+2024-06-13 10:34:39,911 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.email_account.email_account.pull'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2024-06-13 10:34:40,174 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.email.doctype.email_account.email_account.pull)
+2024-06-13 10:34:40,174 Result is kept for 600 seconds
+2024-06-13 10:34:40,179 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.twofactor.delete_all_barcodes_for_users'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2024-06-13 10:34:40,424 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.twofactor.delete_all_barcodes_for_users)
+2024-06-13 10:34:40,424 Result is kept for 600 seconds
+2024-06-13 10:34:40,429 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.website.doctype.web_page.web_page.check_publish_status..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2024-06-13 10:34:40,726 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.website.doctype.web_page.web_page.check_publish_status)
+2024-06-13 10:34:40,726 Result is kept for 600 seconds
+2024-06-13 10:34:40,732 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.oauth.delete_oauth2_data'}, method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.oauth.delete_oauth2_data)
+2024-06-13 10:34:41,007 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::scheduled_job::frappe.oauth.delete_oauth2_data)
+2024-06-13 10:34:41,007 Result is kept for 600 seconds
+2024-06-13 10:34:41,012 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='airplane.localhost', user='Administrator') (airplane.localhost::e7a10c64-3e95-4db3-bdc6-b006c4eec214)
+2024-06-13 10:34:41,233 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::e7a10c64-3e95-4db3-bdc6-b006c4eec214)
+2024-06-13 10:34:41,233 Result is kept for 600 seconds
+2024-06-13 10:34:41,238 home-brilworks-projects-T1-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.email.doctype.auto_email_report.auto_email_report.send..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.email.doctype.auto_email_report.auto_email_report.send_daily)
+2024-06-13 10:34:41,621 home-brilworks-projects-T1-frappe-bench:long: Job OK (airplane.localhost::scheduled_job::frappe.email.doctype.auto_email_report.auto_email_report.send_daily)
+2024-06-13 10:34:41,621 Result is kept for 600 seconds
+2024-06-13 10:34:41,627 home-brilworks-projects-T1-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.s3_backup_settings.s3_backup_sett..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily)
+2024-06-13 10:34:41,946 home-brilworks-projects-T1-frappe-bench:long: Job OK (airplane.localhost::scheduled_job::frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily)
+2024-06-13 10:34:41,946 Result is kept for 600 seconds
+2024-06-13 10:34:41,951 home-brilworks-projects-T1-frappe-bench:long: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., kwargs={'job_type': 'frappe.integrations.doctype.dropbox_settings.dropbox_settings..., method='frappe.core.doctype.scheduled_job_type.scheduled_job_type.run_scheduled_jo..., site='airplane.localhost', user='Administrator') (airplane.localhost::scheduled_job::frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily)
+2024-06-13 10:34:42,352 home-brilworks-projects-T1-frappe-bench:long: Job OK (airplane.localhost::scheduled_job::frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily)
+2024-06-13 10:34:42,352 Result is kept for 600 seconds
+2024-06-13 11:01:42,495 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 11:01:42,500 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 11:01:42,504 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 11:28:42,802 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 11:28:42,805 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 11:28:42,810 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 11:55:43,114 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 11:55:43,116 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 11:55:43,117 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 12:22:43,221 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 12:22:43,222 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 12:22:43,223 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 12:49:43,388 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 12:49:43,391 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 12:49:43,395 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 13:16:43,647 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 13:16:43,651 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 13:16:43,656 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 13:43:43,917 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 13:43:43,922 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 13:43:43,926 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 14:10:44,071 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 14:10:44,075 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 14:10:44,078 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 14:37:44,381 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 14:37:44,382 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 14:37:44,382 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 15:04:44,560 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 15:04:44,565 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 15:04:44,569 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 15:31:44,778 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 15:31:44,782 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 15:31:44,785 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 15:58:45,016 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 15:58:45,021 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 15:58:45,024 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 16:25:45,243 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 16:25:45,247 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 16:25:45,250 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 16:52:45,436 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 16:52:45,440 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 16:52:45,444 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 17:02:52,771 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Crew Member', 'name': 'jtt3fmnjrq'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::f8149936-bca4-4a8d-8783-b6ad323a143f)
+2024-06-13 17:02:52,873 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::f8149936-bca4-4a8d-8783-b6ad323a143f)
+2024-06-13 17:02:52,873 Result is kept for 600 seconds
+2024-06-13 17:02:52,879 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Crew Member', 'name': 'jtj50tjaos'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::4a936f78-537a-4d23-a5c5-db58e4299ef0)
+2024-06-13 17:02:52,970 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::4a936f78-537a-4d23-a5c5-db58e4299ef0)
+2024-06-13 17:02:52,970 Result is kept for 600 seconds
+2024-06-13 17:02:52,975 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Crew Member', 'name': 'jt8c19r7e9'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::9788cbb2-105a-4ba3-ac4e-172095034170)
+2024-06-13 17:02:53,113 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::9788cbb2-105a-4ba3-ac4e-172095034170)
+2024-06-13 17:02:53,113 Result is kept for 600 seconds
+2024-06-13 17:02:53,119 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Crew Member', 'name': 'jt0mim6o2l'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::73767446-1642-4f49-ad17-6fd24fa3520d)
+2024-06-13 17:02:53,191 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::73767446-1642-4f49-ad17-6fd24fa3520d)
+2024-06-13 17:02:53,191 Result is kept for 600 seconds
+2024-06-13 17:02:53,195 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Crew Member', 'name': '-59'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::5d27d074-638d-495a-9f88-a922c829f7e1)
+2024-06-13 17:02:53,266 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::5d27d074-638d-495a-9f88-a922c829f7e1)
+2024-06-13 17:02:53,267 Result is kept for 600 seconds
+2024-06-13 17:02:53,271 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Crew Member', 'name': '-##'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::5ec61049-9e6c-4852-ae70-298bec16d58a)
+2024-06-13 17:02:53,345 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::5ec61049-9e6c-4852-ae70-298bec16d58a)
+2024-06-13 17:02:53,345 Result is kept for 600 seconds
+2024-06-13 17:16:23,494 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 17:16:23,496 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 17:16:23,497 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 17:42:39,467 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': 'flights/british-airways-019-06-2024-00063'}, method=<function update_index_for_path at 0x709f26fccd30>, site='airplane.localhost', user='Administrator') (airplane.localhost::3c49793a-3ba5-43f6-884b-898f5c59cdeb)
+2024-06-13 17:42:40,151 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::3c49793a-3ba5-43f6-884b-898f5c59cdeb)
+2024-06-13 17:42:40,151 Result is kept for 600 seconds
+2024-06-13 17:42:40,156 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 17:42:40,157 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 17:42:40,158 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 17:44:03,171 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': 'flights/british-airways-019-06-2024-00063'}, method=<function update_index_for_path at 0x709f26fccd30>, site='airplane.localhost', user='Administrator') (airplane.localhost::b854a6af-d4bc-4471-a9f5-c0a103d9bd44)
+2024-06-13 17:44:03,906 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::b854a6af-d4bc-4471-a9f5-c0a103d9bd44)
+2024-06-13 17:44:03,906 Result is kept for 600 seconds
+2024-06-13 18:11:04,177 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 18:11:04,181 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 18:11:04,185 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 18:38:04,383 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 18:38:04,386 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 18:38:04,389 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 19:05:04,623 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 19:05:04,625 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 19:05:04,627 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-13 19:18:12,091 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Notification', 'name': 'AA'}, method='frappe.model.delete_doc.delete_dynamic_links', site='airplane.localhost', user='Administrator') (airplane.localhost::0f3259b0-4730-435e-8498-63a265df08d1)
+2024-06-13 19:18:12,221 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::0f3259b0-4730-435e-8498-63a265df08d1)
+2024-06-13 19:18:12,221 Result is kept for 600 seconds
+2024-06-13 19:31:42,312 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-13 19:31:42,316 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-13 19:31:42,320 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
