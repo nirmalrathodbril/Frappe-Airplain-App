@@ -351,3 +351,217 @@ ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `is_pub
 ALTER TABLE `tabAirplane Ticket` MODIFY `passenger` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `status` varchar(140), MODIFY `duration_of_flight` decimal(21,9), MODIFY `gate_number` int NOT NULL DEFAULT 0
 2024-06-13 19:41:23,913 WARNING database DDL Query made to DB:
 ALTER TABLE `tabFlight Passenger` ADD COLUMN `email` varchar(140)
+2024-06-14 18:08:50,359 WARNING database DDL Query made to DB:
+create table `tabTenant` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-06-14 18:44:18,035 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `name1` varchar(140), ADD COLUMN `amended_from` varchar(140)
+2024-06-14 18:44:18,046 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD INDEX `amended_from_index`(`amended_from`)
+2024-06-14 18:45:06,212 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `email` varchar(140)
+2024-06-14 18:45:21,881 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `phone` varchar(140)
+2024-06-14 18:45:51,156 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `address` varchar(140), ADD COLUMN `contact_person` varchar(140)
+2024-06-14 18:47:52,040 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `business_type` varchar(140)
+2024-06-14 18:48:34,817 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `tax_id` varchar(140) UNIQUE
+2024-06-14 18:48:34,819 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD UNIQUE INDEX IF NOT EXISTS tax_id (`tax_id`)
+2024-06-14 18:55:29,471 WARNING database DDL Query made to DB:
+create table `tabShop` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-06-14 18:56:58,128 WARNING database DDL Query made to DB:
+create sequence if not exists shop_id_seq nocache nocycle
+2024-06-14 18:56:58,148 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `name` bigint
+2024-06-14 18:56:58,196 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `area` int NOT NULL DEFAULT 0
+2024-06-14 18:57:21,943 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:06:19,085 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `status` varchar(140)
+2024-06-14 19:06:19,093 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:06:54,492 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `airport` varchar(140)
+2024-06-14 19:06:54,503 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:07:48,795 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `tenant` varchar(140)
+2024-06-14 19:07:48,803 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:08:27,849 WARNING database DDL Query made to DB:
+create table `tabContract` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`amended_from` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index `amended_from`(`amended_from`),
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-06-14 19:09:20,872 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `tenant` varchar(140) NOT NULL DEFAULT '', ADD COLUMN `shop` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:09:44,175 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `rent_amount` int NOT NULL DEFAULT 0
+2024-06-14 19:09:44,183 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `shop` varchar(140) NOT NULL DEFAULT '', MODIFY `tenant` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:10:52,739 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `date_of_expiry` datetime(6)
+2024-06-14 19:10:52,751 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `shop` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:15:24,902 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `start_date` date, ADD COLUMN `end_date` date
+2024-06-14 19:15:24,910 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `shop` varchar(140) NOT NULL DEFAULT '', MODIFY `tenant` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:15:51,814 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `shop` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:17:47,235 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `shop` varchar(140) NOT NULL DEFAULT '', MODIFY `tenant` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:18:57,841 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `contract` varchar(140)
+2024-06-14 19:18:57,850 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:24:03,242 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:24:48,625 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:25:23,245 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-14 19:28:33,834 WARNING database DDL Query made to DB:
+create table `tabRent Payment` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-06-14 19:29:13,616 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` ADD COLUMN `contrcat` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:29:53,296 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` ADD COLUMN `payment_date` datetime(6)
+2024-06-14 19:29:53,304 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `contrcat` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:30:08,844 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` ADD COLUMN `amount` int NOT NULL DEFAULT 0
+2024-06-14 19:30:08,855 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `contrcat` varchar(140) NOT NULL DEFAULT ''
+2024-06-14 19:30:35,753 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` ADD COLUMN `pending_field_for_print` varchar(140)
+2024-06-14 19:30:35,765 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount` int NOT NULL DEFAULT 0, MODIFY `contrcat` varchar(140) NOT NULL DEFAULT ''
+2024-06-17 11:20:36,098 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `address` varchar(140)
+2024-06-17 11:20:36,106 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 11:20:44,866 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 11:37:23,841 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format` ADD COLUMN `print_designer_print_format` json, ADD COLUMN `print_designer_preview_img` text, ADD COLUMN `print_designer_after_table` json, ADD COLUMN `print_designer_settings` json, ADD COLUMN `print_designer_header` json, ADD COLUMN `print_designer_footer` json, ADD COLUMN `print_designer_body` json, ADD COLUMN `print_designer` tinyint NOT NULL DEFAULT 0, ADD COLUMN `print_designer_template_app` varchar(140) DEFAULT 'print_designer'
+2024-06-17 11:37:23,849 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format` MODIFY `absolute_value` tinyint NOT NULL DEFAULT 0, MODIFY `font_size` int NOT NULL DEFAULT 14, MODIFY `print_format_builder` tinyint NOT NULL DEFAULT 0, MODIFY `custom_format` tinyint NOT NULL DEFAULT 0, MODIFY `margin_bottom` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `margin_top` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `line_breaks` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `raw_printing` tinyint NOT NULL DEFAULT 0, MODIFY `margin_right` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `align_labels_right` tinyint NOT NULL DEFAULT 0, MODIFY `print_format_builder_beta` tinyint NOT NULL DEFAULT 0, MODIFY `margin_left` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `show_section_headings` tinyint NOT NULL DEFAULT 0
+2024-06-17 12:23:11,422 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `shop_no` varchar(140)
+2024-06-17 12:23:11,433 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:23:19,413 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:23:25,875 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:23:48,406 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:31:19,985 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount` int NOT NULL DEFAULT 0, MODIFY `contrcat` varchar(140) NOT NULL DEFAULT ''
+2024-06-17 12:37:47,177 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTenant` ADD COLUMN `name_of_the_shop` varchar(140)
+2024-06-17 12:40:19,730 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:43:21,096 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `name` varchar(140)
+2024-06-17 12:43:21,119 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` ADD COLUMN `airport_code` varchar(140)
+2024-06-17 12:43:21,130 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:44:12,548 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:45:03,614 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:46:31,573 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:47:48,945 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:49:32,521 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 12:49:42,747 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 13:20:06,957 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `shop` varchar(140) NOT NULL DEFAULT '', MODIFY `rent_amount` int NOT NULL DEFAULT 0
+2024-06-17 13:21:31,603 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `shop` varchar(140) NOT NULL DEFAULT ''
+2024-06-17 13:31:39,524 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
+2024-06-17 14:03:23,298 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` ADD COLUMN `status` varchar(140)
+2024-06-17 14:03:23,306 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRent Payment` MODIFY `amount` int NOT NULL DEFAULT 0, MODIFY `contrcat` varchar(140) NOT NULL DEFAULT ''
+2024-06-17 14:05:33,958 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` ADD COLUMN `shop_no` varchar(140)
+2024-06-17 14:05:33,966 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `shop` varchar(140) NOT NULL DEFAULT '', MODIFY `rent_amount` int NOT NULL DEFAULT 0
+2024-06-17 14:05:56,369 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `shop` varchar(140) NOT NULL DEFAULT ''
+2024-06-17 14:06:40,029 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract` MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `shop` varchar(140) NOT NULL DEFAULT ''
