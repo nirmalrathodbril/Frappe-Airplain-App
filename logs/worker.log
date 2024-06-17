@@ -12861,3 +12861,54 @@
 2024-06-17 15:12:08,494 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
 2024-06-17 15:12:08,498 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
 2024-06-17 15:12:08,501 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-17 15:39:08,771 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-17 15:39:08,775 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-17 15:39:08,778 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-17 15:52:15,780 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x77733bbc8dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::9a2d56a7-9e9c-4852-97e1-338d3c079b17)
+2024-06-17 15:52:16,143 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::9a2d56a7-9e9c-4852-97e1-338d3c079b17)
+2024-06-17 15:52:16,143 Result is kept for 600 seconds
+2024-06-17 15:53:22,067 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x7046012d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::718fc193-219e-4713-a393-9ec883c7b799)
+2024-06-17 15:53:22,332 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::718fc193-219e-4713-a393-9ec883c7b799)
+2024-06-17 15:53:22,332 Result is kept for 600 seconds
+2024-06-17 16:00:34,307 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x70a907accdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::7702be9c-3bde-4c31-8c45-51f6de8aad49)
+2024-06-17 16:00:34,497 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::7702be9c-3bde-4c31-8c45-51f6de8aad49)
+2024-06-17 16:00:34,498 Result is kept for 600 seconds
+2024-06-17 16:07:19,524 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-17 16:07:19,528 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-17 16:07:19,531 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-17 16:14:38,312 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x70a907accdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::b375273c-c05a-4d98-b8fd-87b7252386a5)
+2024-06-17 16:14:38,524 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::b375273c-c05a-4d98-b8fd-87b7252386a5)
+2024-06-17 16:14:38,524 Result is kept for 600 seconds
+2024-06-17 16:15:44,330 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x7704887dcdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::06719d85-e42a-41b7-877f-abc48c78f1fe)
+2024-06-17 16:15:44,590 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::06719d85-e42a-41b7-877f-abc48c78f1fe)
+2024-06-17 16:15:44,590 Result is kept for 600 seconds
+2024-06-17 16:22:29,634 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-17 16:22:29,684 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-17 16:22:29,692 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-17 16:30:14,758 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x7b85472b0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::d0faafe1-8064-49a9-93a0-bcad1d2b19b0)
+2024-06-17 16:30:14,964 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::d0faafe1-8064-49a9-93a0-bcad1d2b19b0)
+2024-06-17 16:30:14,964 Result is kept for 600 seconds
+2024-06-17 16:31:06,325 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x7b85472b0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::ddc20ff0-4b58-4d82-a366-6db913bc7b8b)
+2024-06-17 16:31:06,565 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::ddc20ff0-4b58-4d82-a366-6db913bc7b8b)
+2024-06-17 16:31:06,565 Result is kept for 600 seconds
+2024-06-17 16:37:23,896 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x70429f3e4dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::2424246d-39da-422b-98c2-540d5ba1e0de)
+2024-06-17 16:37:24,106 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::2424246d-39da-422b-98c2-540d5ba1e0de)
+2024-06-17 16:37:24,106 Result is kept for 600 seconds
+2024-06-17 16:37:30,703 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x70429f3e4dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::c31168a7-c524-4d56-8588-953431f66378)
+2024-06-17 16:37:30,920 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::c31168a7-c524-4d56-8588-953431f66378)
+2024-06-17 16:37:30,920 Result is kept for 600 seconds
+2024-06-17 16:37:52,512 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x78d785ddcdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::7ad48e43-b43c-4a99-85bf-7e34576e5841)
+2024-06-17 16:37:52,708 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::7ad48e43-b43c-4a99-85bf-7e34576e5841)
+2024-06-17 16:37:52,709 Result is kept for 600 seconds
+2024-06-17 16:37:57,429 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x78d785ddcdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::503097b4-95e4-4d16-9e22-ee61065d9123)
+2024-06-17 16:37:57,636 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::503097b4-95e4-4d16-9e22-ee61065d9123)
+2024-06-17 16:37:57,636 Result is kept for 600 seconds
+2024-06-17 16:38:04,075 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x78d785ddcdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::e4c31229-79f4-4079-a921-98097d0a869c)
+2024-06-17 16:38:04,272 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::e4c31229-79f4-4079-a921-98097d0a869c)
+2024-06-17 16:38:04,272 Result is kept for 600 seconds
+2024-06-17 16:38:07,842 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x78d785ddcdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::101027e6-3e90-4117-8a84-c6f48da94bcf)
+2024-06-17 16:38:08,066 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::101027e6-3e90-4117-8a84-c6f48da94bcf)
+2024-06-17 16:38:08,066 Result is kept for 600 seconds
+2024-06-17 16:38:21,769 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x78d785ddcdc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::f0f1e2da-569c-415f-a605-92d54f6a1309)
+2024-06-17 16:38:21,996 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::f0f1e2da-569c-415f-a605-92d54f6a1309)
+2024-06-17 16:38:21,996 Result is kept for 600 seconds
