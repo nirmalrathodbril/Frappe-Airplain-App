@@ -1,0 +1,40 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2024-06-17 14:56:39.157876",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{}",
+ "letter_head": "",
+ "letterhead": null,
+ "modified": "2024-06-17 14:58:23.328689",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "List of shops by Airport",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Shop",
+ "report_name": "List of shops by Airport",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Airport Authority Personnel"
+  },
+  {
+   "role": "Fleet managers"
+  },
+  {
+   "role": "Travel Agent"
+  },
+  {
+   "role": "Flight Crew Member"
+  }
+ ]
+}

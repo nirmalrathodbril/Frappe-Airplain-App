@@ -1,0 +1,23 @@
+<!-- available_shops.html -->
+
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+  <h1>Shops</h1>
+  <div class="available-shops">
+    {% if shops %}
+      <ul>
+        {% for shop in shops %}
+          <li>
+			  <strong>Airport:</strong> {{ shop.airport }}<br>
+			  <strong>Shop Number:</strong> {{ shop.shop_no }}<br>
+			  <strong>Area:</strong> {{ shop.area }} sq ft<br>
+			  <strong>Status:</strong> {{ shop.status }}<br>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No shops are available at the moment.</p>
+    {% endif %}
+  </div>
+{% endblock %}

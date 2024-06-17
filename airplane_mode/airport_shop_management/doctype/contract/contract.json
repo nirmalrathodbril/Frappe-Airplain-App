@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-06-14 19:08:27.816666",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_rxr7",
+  "tenant",
+  "shop",
+  "rent_amount",
+  "shop_no",
+  "column_break_lhuh",
+  "date_of_expiry",
+  "start_date",
+  "end_date",
+  "section_break_gibb",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_rxr7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Contract",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Tenant",
+   "not_nullable": 1,
+   "options": "Tenant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shop",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shop",
+   "not_nullable": 1,
+   "options": "Shop",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rent_amount",
+   "fieldtype": "Int",
+   "label": "Rent Amount",
+   "non_negative": 1,
+   "options": "Currency"
+  },
+  {
+   "fieldname": "date_of_expiry",
+   "fieldtype": "Datetime",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "column_break_lhuh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "section_break_gibb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "shop.shop_no",
+   "fieldname": "shop_no",
+   "fieldtype": "Data",
+   "label": "Shop No",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-17 14:06:39.914400",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Contract",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "shop_no"
+}
