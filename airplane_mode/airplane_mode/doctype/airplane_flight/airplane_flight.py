@@ -18,17 +18,32 @@ class AirplaneFlight(WebsiteGenerator):
 	def before_submit(self):
 		self.status = "Completed"
 
+	def update_crew_member_status(self):
+
+		status_mapping = {
+			'Completed': 'Available',
+			'Scheduled': 'Unavailable',
+			'Cancelled': 'Available'
+		}
+
+		new_status = status_mapping.get(self.status)
+
+		flight_crew_members = frappe.get_all('Flight Crew Member',
+											 filters={'parent': self.name},
+											 fields=['crew_member'])
+
+		for flight_crew in flight_crew_members:
+			crew_member_name = flight_crew.get('crew_member')
+
+			# Assuming Crew Member doctype has a field 'status'
+			frappe.db.set_value('Crew Member', crew_member_name, 'status', new_status)
+
 	def on_update(self):
-		# Check if the gate number has changed
-		# print("gate no")
-		# print(self.gate_no)
-		# print(self.get_db_value('gate_no'))
 
 		#db_gate = frappe.db.get_value(self.doctype, self.name, 'gate_no')
 
-
-		if self.gate_no != AirplaneFlight.db_gate:
-			self.send_gate_change_notification()
+		if self.status in ['Completed', 'Scheduled', 'Cancelled']:
+			self.update_crew_member_status()
 
 	def send_gate_change_notification(self):
 		print("calling send_gate_change_notification")
