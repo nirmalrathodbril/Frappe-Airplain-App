@@ -230,3 +230,8 @@
 2024-06-17 18:02:57,249 INFO /home/brilworks/.local/bin/bench --site airplane.localhost enable-scheduler
 2024-06-17 18:03:15,242 INFO /home/brilworks/.local/bin/bench --site airplane.localhost execute airplane_mode.airplane_mode.airport_shop_management.doc_type.rent_payment.send_rent_reminders
 2024-06-18 12:00:01,578 INFO /usr/local/bin/bench --verbose --site all backup
+2024-06-18 13:39:42,105 INFO /home/brilworks/.local/bin/bench start
+2024-06-18 13:39:42,541 INFO /home/brilworks/.local/bin/bench watch
+2024-06-18 13:39:42,542 INFO /home/brilworks/.local/bin/bench schedule
+2024-06-18 13:39:42,592 INFO /home/brilworks/.local/bin/bench worker
+2024-06-18 13:39:42,595 INFO /home/brilworks/.local/bin/bench serve --port 8000

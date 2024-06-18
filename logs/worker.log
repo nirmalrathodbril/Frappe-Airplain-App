@@ -13068,3 +13068,71 @@
 2024-06-18 12:17:56,765 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
 2024-06-18 12:17:56,766 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
 2024-06-18 12:17:56,767 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 12:44:56,938 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 12:44:56,943 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 12:44:56,946 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 13:11:57,096 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 13:11:57,100 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 13:11:57,103 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 13:33:56,290 Worker 7d68c8ebbf1f44fca484e0d10beaaaff [PID 224012]: warm shut down requested
+2024-06-18 13:33:56,294 Unsubscribing from channel rq:pubsub:7d68c8ebbf1f44fca484e0d10beaaaff
+2024-06-18 13:40:08,386 Worker rq:worker:7ee70d6236514597a954e0938c87bce7 started with PID 5432, version 1.15.1
+2024-06-18 13:40:08,440 Subscribing to channel rq:pubsub:7ee70d6236514597a954e0938c87bce7
+2024-06-18 13:40:08,457 *** Listening on home-brilworks-projects-T1-frappe-bench:short, home-brilworks-projects-T1-frappe-bench:default, home-brilworks-projects-T1-frappe-bench:long...
+2024-06-18 13:40:08,457 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 13:40:08,458 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 13:40:08,459 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 14:07:08,723 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 14:07:08,728 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 14:07:08,732 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 14:34:08,885 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 14:34:08,887 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 14:34:08,889 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 14:42:16,683 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::2d70fbf2-2afa-4b89-947f-226d646aeefe)
+2024-06-18 14:42:17,120 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::2d70fbf2-2afa-4b89-947f-226d646aeefe)
+2024-06-18 14:42:17,120 Result is kept for 600 seconds
+2024-06-18 14:42:57,083 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::3b48a65a-bbf4-48c3-a130-88e6e7f9d266)
+2024-06-18 14:42:57,337 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::3b48a65a-bbf4-48c3-a130-88e6e7f9d266)
+2024-06-18 14:42:57,337 Result is kept for 600 seconds
+2024-06-18 14:43:15,511 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::c8e362cf-5393-475e-9651-5f8a3b4571ae)
+2024-06-18 14:43:15,829 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::c8e362cf-5393-475e-9651-5f8a3b4571ae)
+2024-06-18 14:43:15,829 Result is kept for 600 seconds
+2024-06-18 14:43:30,019 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::39b37a1b-29df-4938-806d-c527cba4b1e0)
+2024-06-18 14:43:30,334 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::39b37a1b-29df-4938-806d-c527cba4b1e0)
+2024-06-18 14:43:30,334 Result is kept for 600 seconds
+2024-06-18 14:43:40,290 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::b0fb072c-f2db-4a8e-8718-d9d63c1b198e)
+2024-06-18 14:43:40,578 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::b0fb072c-f2db-4a8e-8718-d9d63c1b198e)
+2024-06-18 14:43:40,579 Result is kept for 600 seconds
+2024-06-18 14:43:48,618 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::14b19321-fa3d-4ce3-9c4b-1d45e430247a)
+2024-06-18 14:43:48,969 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::14b19321-fa3d-4ce3-9c4b-1d45e430247a)
+2024-06-18 14:43:48,970 Result is kept for 600 seconds
+2024-06-18 14:50:34,076 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 14:50:34,080 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 14:50:34,083 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 15:03:32,673 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::0fae349d-badd-470d-9e0f-5db5331c74a8)
+2024-06-18 15:03:33,000 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::0fae349d-badd-470d-9e0f-5db5331c74a8)
+2024-06-18 15:03:33,000 Result is kept for 600 seconds
+2024-06-18 15:03:53,135 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::3552ec92-9ebd-4828-8958-48a180d2b184)
+2024-06-18 15:03:53,450 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::3552ec92-9ebd-4828-8958-48a180d2b184)
+2024-06-18 15:03:53,450 Result is kept for 600 seconds
+2024-06-18 15:04:05,826 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::87059012-cd5e-479b-9cbd-52f18a1689a5)
+2024-06-18 15:04:06,094 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::87059012-cd5e-479b-9cbd-52f18a1689a5)
+2024-06-18 15:04:06,094 Result is kept for 600 seconds
+2024-06-18 15:04:16,757 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': None}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::db47f233-42d1-493f-99a0-85e0c671b42d)
+2024-06-18 15:04:17,067 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::db47f233-42d1-493f-99a0-85e0c671b42d)
+2024-06-18 15:04:17,067 Result is kept for 600 seconds
+2024-06-18 15:08:39,325 home-brilworks-projects-T1-frappe-bench:default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.search.website_search.update_index_for_path', kwargs={'path': 'flights/indigo-054-06-2024-00066'}, method=<function update_index_for_path at 0x79378f7d0dc0>, site='airplane.localhost', user='Administrator') (airplane.localhost::75b6b0d7-9166-4cd0-93bc-326180cdebc8)
+2024-06-18 15:08:40,406 home-brilworks-projects-T1-frappe-bench:default: Job OK (airplane.localhost::75b6b0d7-9166-4cd0-93bc-326180cdebc8)
+2024-06-18 15:08:40,406 Result is kept for 600 seconds
+2024-06-18 15:15:25,479 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 15:15:25,480 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 15:15:25,481 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 15:42:25,689 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 15:42:25,691 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 15:42:25,692 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 16:09:25,974 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 16:09:25,975 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 16:09:25,976 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long
+2024-06-18 16:36:26,221 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:short
+2024-06-18 16:36:26,224 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:default
+2024-06-18 16:36:26,227 Cleaning registries for queue: home-brilworks-projects-T1-frappe-bench:long

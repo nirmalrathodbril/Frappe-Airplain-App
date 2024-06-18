@@ -573,3 +573,5 @@ ALTER TABLE `tabAirplane Flight` MODIFY `is_published` tinyint NOT NULL DEFAULT 
 ALTER TABLE `tabAirplane Ticket` MODIFY `status` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140), MODIFY `gate_number` int NOT NULL DEFAULT 0
 2024-06-17 21:18:38,801 WARNING database DDL Query made to DB:
 ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `gate_number` int NOT NULL DEFAULT 0, MODIFY `status` varchar(140), MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9)
+2024-06-18 15:20:08,830 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShop` MODIFY `area` int NOT NULL DEFAULT 0
