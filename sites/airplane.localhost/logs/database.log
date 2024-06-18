@@ -565,3 +565,11 @@ ALTER TABLE `tabContract` MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODI
 ALTER TABLE `tabContract` MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `shop` varchar(140) NOT NULL DEFAULT ''
 2024-06-17 14:06:40,029 WARNING database DDL Query made to DB:
 ALTER TABLE `tabContract` MODIFY `tenant` varchar(140) NOT NULL DEFAULT '', MODIFY `rent_amount` int NOT NULL DEFAULT 0, MODIFY `shop` varchar(140) NOT NULL DEFAULT ''
+2024-06-17 21:09:17,809 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `duration` decimal(21,9), MODIFY `gate_no` int NOT NULL DEFAULT 0, MODIFY `is_published` tinyint NOT NULL DEFAULT 0
+2024-06-17 21:09:39,868 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Flight` MODIFY `is_published` tinyint NOT NULL DEFAULT 0, MODIFY `duration` decimal(21,9), MODIFY `gate_no` int NOT NULL DEFAULT 0
+2024-06-17 21:16:44,045 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `status` varchar(140), MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `duration_of_flight` decimal(21,9), MODIFY `passenger` varchar(140), MODIFY `gate_number` int NOT NULL DEFAULT 0
+2024-06-17 21:18:38,801 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAirplane Ticket` MODIFY `flight_price` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `gate_number` int NOT NULL DEFAULT 0, MODIFY `status` varchar(140), MODIFY `passenger` varchar(140), MODIFY `duration_of_flight` decimal(21,9)

@@ -1,0 +1,6 @@
+2024-06-17 18:02:37,777 INFO ipython === bench console session ===
+2024-06-17 18:02:37,778 INFO ipython from airplane_mode.airplane_mode.airport_shop_management.doc_type.rent_payment import send_rent_reminders
+send_rent_reminders()
+2024-06-17 18:02:37,778 INFO ipython from airplane_mode.airplane_mode.airport_shop_management.doc_type.rent_payment import send_rent_reminders
+send_rent_reminders()
+2024-06-17 18:02:37,778 INFO ipython === session end ===
