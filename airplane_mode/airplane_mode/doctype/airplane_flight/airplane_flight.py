@@ -40,7 +40,10 @@ class AirplaneFlight(WebsiteGenerator):
 
 	def on_update(self):
 
-		#db_gate = frappe.db.get_value(self.doctype, self.name, 'gate_no')
+		db_gate = frappe.db.get_value(self.doctype, self.name, 'gate_no')
+
+		if( self.gate_no != db_gate):
+			self.send_gate_change_notification()
 
 		if self.status in ['Completed', 'Scheduled', 'Cancelled']:
 			self.update_crew_member_status()

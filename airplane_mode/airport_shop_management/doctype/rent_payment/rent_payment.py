@@ -10,10 +10,15 @@ class RentPayment(Document):
 
 	def send_rent_reminders(self):
 		print("send rent reminder started")
+
+
+
 		if frappe.db.get_single_value('Global Configuration', 'enable_rent_reminders'):
 			contracts = frappe.get_all('Contract', filters={'end_date': ('>', frappe.utils.nowdate())})
 			print(contracts)
 			for contract in contracts:
+				# create a rent payment doc type with
+
 				tenant = frappe.get_doc('Tenant', contract.tenant)
 				print(tenant)
 				frappe.sendmail(

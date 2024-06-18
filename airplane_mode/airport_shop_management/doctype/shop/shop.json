@@ -20,7 +20,8 @@
    "description": "Area in sq-ft",
    "fieldname": "area",
    "fieldtype": "Int",
-   "label": "Area"
+   "label": "Area",
+   "non_negative": 1
   },
   {
    "fieldname": "status",
@@ -70,7 +71,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-17 13:31:39.409440",
+ "modified": "2024-06-18 15:20:08.614740",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Shop",
