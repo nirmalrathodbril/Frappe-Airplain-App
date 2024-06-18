@@ -21,14 +21,12 @@
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "First Name",
    "reqd": 1
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Last Name",
    "reqd": 1
   },
@@ -72,7 +70,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-13 17:46:52.293734",
+ "modified": "2024-06-17 21:12:55.623272",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Crew Member",

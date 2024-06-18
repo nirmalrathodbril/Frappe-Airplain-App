@@ -17,4 +17,14 @@ def get_context(context):
 	context.shops = frappe.get_all('Shop', filters=filters,
 								   fields=['shop_no', 'name', 'area', 'tenant', 'airport',
 										   'status'])
+
+	context.airports = frappe.get_all('Airport', fields=['code', 'name'], distinct=True)
+	context.statuses = ['Unavailable', 'Available', 'Out Of City', 'Discontinue']
+
+	print("======================== FROM Get context")
+	print(context.airports)
+
+	#context.airports = [airport['code'] for airport in context.airports]
+
+
 	return context

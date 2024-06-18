@@ -14,8 +14,6 @@
   "date_of_departure",
   "time_of_departure",
   "duration",
-  "status",
-  "amended_from",
   "column_break_saqx",
   "source_airport_code",
   "destination_airport_code",
@@ -23,8 +21,11 @@
   "route",
   "image",
   "gate_no",
+  "status",
   "section_break_twks",
-  "crew_members"
+  "crew_members",
+  "section_break_msdx",
+  "amended_from"
  ],
  "fields": [
   {
@@ -140,6 +141,10 @@
    "label": "Gate No.",
    "non_negative": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "section_break_msdx",
+   "fieldtype": "Section Break"
   }
  ],
  "has_web_view": 1,
@@ -152,7 +157,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2024-06-13 18:10:07.505938",
+ "modified": "2024-06-17 21:09:39.721443",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",
