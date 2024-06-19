@@ -235,3 +235,4 @@
 2024-06-18 13:39:42,542 INFO /home/brilworks/.local/bin/bench schedule
 2024-06-18 13:39:42,592 INFO /home/brilworks/.local/bin/bench worker
 2024-06-18 13:39:42,595 INFO /home/brilworks/.local/bin/bench serve --port 8000
+2024-06-19 12:00:01,772 INFO /usr/local/bin/bench --verbose --site all backup
