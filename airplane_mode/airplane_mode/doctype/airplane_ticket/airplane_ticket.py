@@ -9,7 +9,7 @@ from frappe.model.document import Document
 
 #from apps.frappe import frappe
 
-
+import razorpay
 class AirplaneTicket(Document):
 	def validate(self):
 		print("======== AirplaneTicket validate 123")
@@ -20,7 +20,6 @@ class AirplaneTicket(Document):
 		unique_add_ons_dict = {}
 		for add_on in add_ons:
 			unique_add_ons_dict[add_on.item] = add_on
-
 		# Update the add_ons with the unique values
 		self.add_ons = list(unique_add_ons_dict.values())
 

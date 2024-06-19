@@ -2,6 +2,10 @@
 
 Airplane solutions
 
+### RECORDING 
+Recording Link in case video does not play due to format issue : https://drive.google.com/file/d/1b5vrDz6uPQc-uHAv8nwfrBk62HYOuuDS/view?usp=sharing
+
+
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
