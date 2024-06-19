@@ -1,0 +1,254 @@
+{
+ "actions": [
+  {
+   "action": "assign_seat",
+   "action_type": "Server Action",
+   "hidden": 1,
+   "label": "Assign Seat"
+  }
+ ],
+ "allow_rename": 1,
+ "autoname": "format: {flight}-{source_airport_code}-to-{destination_airport_code}-{###}",
+ "creation": "2024-05-10 15:31:17.733033",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_fgyb",
+  "flight_price",
+  "column_break_amef",
+  "total_amount",
+  "section_break_jdfj",
+  "flight",
+  "source_airport",
+  "destination_airport",
+  "passenger",
+  "status",
+  "gate_number",
+  "column_break_uofh",
+  "source_airport_code",
+  "destination_airport_code",
+  "departure_date",
+  "departure_time",
+  "duration_of_flight",
+  "amended_from",
+  "seat",
+  "section_break_vwwu",
+  "add_ons"
+ ],
+ "fields": [
+  {
+   "fetch_from": "flight.source_airport",
+   "fieldname": "source_airport",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Source Airport",
+   "options": "Airport"
+  },
+  {
+   "fetch_from": "flight.destination_airport",
+   "fieldname": "destination_airport",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Destination Airport",
+   "options": "Airport"
+  },
+  {
+   "fieldname": "passenger",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Passenger",
+   "options": "Flight Passenger",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Booked\nFailed\nUnder Process\nBoarded"
+  },
+  {
+   "fieldname": "column_break_uofh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "flight.source_airport_code",
+   "fieldname": "source_airport_code",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Source Airport Code"
+  },
+  {
+   "fetch_from": "flight.destination_airport_code",
+   "fieldname": "destination_airport_code",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Destination Airport Code"
+  },
+  {
+   "fetch_from": "flight.date_of_departure",
+   "fieldname": "departure_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "label": "Departure Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "flight.time_of_departure",
+   "fieldname": "departure_time",
+   "fieldtype": "Time",
+   "label": "Departure Time",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "flight.duration",
+   "fieldname": "duration_of_flight",
+   "fieldtype": "Duration",
+   "label": "Duration of Flight"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Airplane Ticket",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_fgyb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "flight_price",
+   "fieldtype": "Currency",
+   "label": "Flight Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "is_virtual": 1,
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_jdfj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_amef",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vwwu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_ons",
+   "fieldtype": "Table",
+   "label": "Add Ons",
+   "options": "Airplane Ticket Add-on Item",
+   "search_index": 1
+  },
+  {
+   "fieldname": "flight",
+   "fieldtype": "Link",
+   "label": "flight",
+   "options": "Airplane Flight",
+   "reqd": 1
+  },
+  {
+   "fieldname": "seat",
+   "fieldtype": "Data",
+   "label": "Seat",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "flight.gate_no",
+   "fieldname": "gate_number",
+   "fieldtype": "Int",
+   "label": "Gate Number",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-17 21:18:38.619184",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Airplane Ticket",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Travel Agent",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Flight Crew Member",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Airport Authority Personnel",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Red",
+   "title": "Failed"
+  },
+  {
+   "color": "Green",
+   "title": "Booked"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Under Process "
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

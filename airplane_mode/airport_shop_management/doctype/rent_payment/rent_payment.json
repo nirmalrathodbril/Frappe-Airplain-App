@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-14 19:28:33.799636",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contrcat",
+  "amount",
+  "column_break_jnfx",
+  "payment_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "contrcat",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contrcat",
+   "not_nullable": 1,
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_date",
+   "fieldtype": "Datetime",
+   "label": "Payment Date"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Int",
+   "label": "Amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_jnfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Reminder Sent\nCollected"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-17 14:03:23.201343",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Rent Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,40 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "name",
+   "fieldtype": "Data",
+   "label": "Add-On Type",
+   "width": 0
+  },
+  {
+   "fieldname": "count_of_usage",
+   "fieldtype": "Int",
+   "label": "Sold Count",
+   "width": 0
+  }
+ ],
+ "creation": "2024-06-10 16:34:47.441369",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-06-10 18:19:43.206579",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Add-on Popularity",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n    type.name, COUNT(1) AS count_of_usage \n    FROM `tabAirplane Ticket Add-on Item` AS item \n        RIGHT JOIN `tabAirplane Ticket Add-on Type` AS type ON type.name = item.item \n    GROUP BY type.name\n    Order By count_of_usage DESC;\n",
+ "ref_doctype": "Airplane Ticket Add-on Type",
+ "report_name": "Add-on Popularity",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

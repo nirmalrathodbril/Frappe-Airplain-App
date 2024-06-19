@@ -1,0 +1,43 @@
+<!-- available_shops.html -->
+
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+  <h1>Shops</h1>
+  <div class="filters">
+    <label for="airport-select">Select Airport:</label>
+    <select id="airport-select">
+      <option value="">--Select Airport--</option>
+        {% for airport in airports %}
+        <option value="{{ airport.code }}">{{ airport.name }}</option>
+		<!-- {% if frappe.form_dict.airport.name == airport.name %}selected{% endif %} -->
+		{% endfor %}
+    </select>
+
+    <label for="status-select">Select Status:</label>
+    <select id="status-select">
+      <option value="">--Select Status--</option>
+      <option value="Available">Available</option>
+      <option value="Unavailable">Unavailable</option>
+    </select>
+
+    <button id="filter-button" type="button">Apply Filters</button>
+  </div>
+
+  <div class="available-shops">
+    {% if shops %}
+      <ul id="shop-list">
+        {% for shop in shops %}
+          <li class="shop-item" data-airport="{{ shop.airport }}" data-status="{{ shop.status }}">
+            <strong>Airport:</strong> {{ shop.airport }}<br>
+            <strong>Shop Number:</strong> {{ shop.shop_no }}<br>
+            <strong>Area:</strong> {{ shop.area }} sq ft<br>
+            <strong>Status:</strong> {{ shop.status }}<br>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p>No shops are available at the moment.</p>
+    {% endif %}
+  </div>
+{% endblock %}
