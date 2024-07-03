@@ -131,6 +131,7 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
+# if we used Cron the C will be capital , try once
 scheduler_events = {
 # 	"all": [
 # 		"airplane_mode.tasks.all"
